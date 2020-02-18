@@ -14,7 +14,7 @@ def get_info(s):
         repo_name = repo["name"]
         r = requests.get("https://api.github.com/repos/" + s + "/" + repo_name + "/commits")
         commits = r.json()
-        output[repo_name] = str(len(commits))
+        output[repo_name] = len(commits)
 
     return output
 
