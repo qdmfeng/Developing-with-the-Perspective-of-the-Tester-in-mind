@@ -3,7 +3,7 @@ import main as a
 from unittest import mock
 from unittest.mock import Mock
 import json
-from requests.models import Response
+
 
 
 class MyTestCase(unittest.TestCase):
